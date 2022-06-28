@@ -1,0 +1,22 @@
+
+{% load static %}
+{% block a %} 
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" class="form">{%csrf_token%}
+        <input type="text" class="comment-name" name="txtUserName" placeholder="User Name*" required>
+        <input type="password" name="txtPassword" placeholder="Password" class="comment-email" placeholder="Email*" required>
+        <input type="email" name="txtEmail" placeholder="Email"/>
+        <input type="date" name="txtDOB" placeholder="DOB"/> 
+        <button tpye = "button" >submit</button>
+</body>
+</html>
+{% endblock %}

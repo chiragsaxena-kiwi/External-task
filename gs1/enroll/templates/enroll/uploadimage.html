@@ -1,0 +1,15 @@
+{% extends 'enroll/header_footer.html' %}
+{% load static %}
+
+{% block a %}
+
+
+
+<form method="post" enctype="multipart/form-data">{%csrf_token%}
+    <input type="text" name="nm"><br>
+    <input type="text" name="em"><br>
+    <input type="password" name="ps"><br>
+    <input type="file" name="f"><br>
+    <input type="submit">Save
+</form>
+{% endblock %}

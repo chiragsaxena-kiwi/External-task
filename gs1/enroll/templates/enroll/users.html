@@ -1,0 +1,10 @@
+{% block a %}
+    <div>
+        {% for i in allusers %}
+        <ul>
+            <li>username : {{i.username}}</li>
+            <li>email : {{i.email}}</li>
+        </ul>
+    </div>
+{% endfor %}    
+{% endblock %}

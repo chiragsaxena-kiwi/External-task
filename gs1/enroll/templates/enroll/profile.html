@@ -1,0 +1,11 @@
+{% extends 'enroll/header_footer.html' %}
+{% load static %}
+
+{% block a %}
+        <h1>
+            {{uid.username}}
+        </h1>
+        <a href='{% url "detail" %}'>Home</a>
+        
+{% endblock %} 
+
